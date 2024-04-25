@@ -33,13 +33,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
         android:onClick="click"
         android:text="@string/btn_6_text"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/btn_3"
         app:layout_constraintStart_toEndOf="@+id/btn_5"
-        tools:layout_editor_absoluteY="483dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -71,12 +70,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
         android:onClick="click"
         android:text="@string/btn_3_text"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/btn_2"
-        app:layout_constraintTop_toBottomOf="@+id/btn_6" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_igual"
+        app:layout_constraintStart_toEndOf="@+id/btn_2" />
 
     <Button
         android:id="@+id/btn_4"
