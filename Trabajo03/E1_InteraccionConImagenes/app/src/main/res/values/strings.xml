@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">E1_InteraccionConImagenes</string>
+    <string name="mensaje_vacio">Escribe un mensaje</string>
 </resources>
