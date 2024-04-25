@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">E2_CalculadoraBasica</string>
+    <string name="btn_0_text">0</string>
+    <string name="btn_1_text">1</string>
+    <string name="btn_2_text">2</string>
+    <string name="btn_3_text">3</string>
+    <string name="btn_4_text">4</string>
+    <string name="btn_5_text">5</string>
+    <string name="btn_6_text">6</string>
+    <string name="btn_7_text">7</string>
+    <string name="btn_8_text">8</string>
+    <string name="btn_9_text">9</string>
+    <string name="btn_suma_text">+</string>
+    <string name="btn_resta_text">-</string>
+    <string name="btn_multiplicar_text">*</string>
+    <string name="btn_dividir_text">/</string>
+    <string name="btn_igual_text">=</string>
+
 </resources>
