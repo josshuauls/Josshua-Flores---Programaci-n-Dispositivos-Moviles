@@ -19,5 +19,6 @@ class UsuariosAdapter(val items: List<Usuario>):RecyclerView.Adapter<UsuarioView
     override fun onBindViewHolder(holder: UsuarioViewHolder, position: Int) {
         val item =items[position]
         holder.render(item)
+        holder.clickRecycle()
     }
 }

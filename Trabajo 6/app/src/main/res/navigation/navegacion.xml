@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navegacion">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/listaUsuariosFragment">
 
+    <fragment
+        android:id="@+id/editorFragment"
+        android:name="com.dares03.practica6.EditorFragment"
+        android:label="fragment_editor"
+        tools:layout="@layout/fragment_editor" />
+    <fragment
+        android:id="@+id/agregarFragment"
+        android:name="com.dares03.practica6.AgregarFragment"
+        android:label="fragment_agregar"
+        tools:layout="@layout/fragment_agregar" />
+    <fragment
+        android:id="@+id/listaUsuariosFragment"
+        android:name="com.dares03.practica6.ListaUsuariosFragment"
+        android:label="fragment_lista_usuarios"
+        tools:layout="@layout/fragment_lista_usuarios" >
+        <action
+            android:id="@+id/action_listaUsuariosFragment_to_editorFragment"
+            app:destination="@id/editorFragment" />
+        <action
+            android:id="@+id/action_listaUsuariosFragment_to_agregarFragment"
+            app:destination="@id/agregarFragment" />
+    </fragment>
 </navigation>

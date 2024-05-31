@@ -14,17 +14,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        initRecyclerView()
-    }
 
-    fun initRecyclerView(){
-        val manager = LinearLayoutManager(this)
-        val decoration = DividerItemDecoration(this,manager.orientation)
-        val userRecycle = findViewById<RecyclerView>(R.id.listaUsuarios)
-
-        userRecycle.layoutManager = manager
-        userRecycle.adapter = UsuariosAdapter(UsuarioProvider.listaUsuario)
-
-        userRecycle.addItemDecoration(decoration)
     }
 }
