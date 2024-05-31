@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         else{
             valor2 = digito
         }
+        actualizarPantallaEntrada()
     }
 
     fun agregarOperador(operadorNuevo:String){
@@ -49,9 +50,9 @@ class MainActivity : AppCompatActivity() {
         if(valor1.isNotEmpty() && valor2.isNotEmpty()){
             val resultado = when(operador){
                 "+" -> valor1.toDouble() + valor2.toDouble()
-                "-" -> valor1.toDouble() + valor2.toDouble()
-                "*" -> valor1.toDouble() + valor2.toDouble()
-                "/" -> valor1.toDouble() + valor2.toDouble()
+                "-" -> valor1.toDouble() - valor2.toDouble()
+                "*" -> valor1.toDouble() * valor2.toDouble()
+                "/" -> valor1.toDouble() / valor2.toDouble()
                 else -> 0.0
             }
             actualizarPantallaSalida(resultado.toString())
