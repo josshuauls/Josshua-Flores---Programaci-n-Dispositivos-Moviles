@@ -20,5 +20,6 @@ class UsuariosAdapter(val items: List<Usuario>):RecyclerView.Adapter<UsuarioView
         val item =items[position]
         holder.render(item)
         holder.clickRecycle()
+
     }
 }
